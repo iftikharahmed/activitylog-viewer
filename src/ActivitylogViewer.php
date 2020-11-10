@@ -74,7 +74,7 @@ class ActivitylogViewer
         $id = $this->attributes['id'];
 
         $logs = $this->getData();
-        return view('iftikhar.activitylog-viewer::table', compact('logs', 'suitable', 'id', 'attributes'));
+        return view('iftikharahmed.activitylog-viewer::table', compact('logs', 'suitable', 'id', 'attributes'));
     }
 
     public function id($id)
@@ -114,7 +114,7 @@ class ActivitylogViewer
         }
 
         $logs = $model->paginate();
-        $data = new \League\Fractal\Resource\Collection($logs, app(config('iftikhar.activitylog-viewer.transformer')));
+        $data = new \League\Fractal\Resource\Collection($logs, app(config('iftikharahmed.activitylog-viewer.transformer')));
         $manager = new Manager();
         $result = $manager->createData($data)->toArray();
 

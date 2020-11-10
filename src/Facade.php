@@ -8,6 +8,6 @@ class Facade extends \Illuminate\Support\Facades\Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'iftikhar.activitylog-viewer';
+        return 'iftikharahmed.activitylog-viewer';
     }
 }

@@ -34,8 +34,8 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function register()
     {
-        $this->app->bind('iftikhar.activitylog-viewer', function(){
-            return new Hologram();
+        $this->app->bind('iftikharahmed.activitylog-viewer', function(){
+            return new ActivitylogViewer();
         });
     }
 
@@ -53,7 +53,7 @@ class ServiceProvider extends BaseServiceProvider
         $this->registerTranslations();
         $this->registerConfigurations();
 
-        if(! $this->app->routesAreCached() && config('laravolt.hologram.route.enabled')) {
+        if(! $this->app->routesAreCached() && config('iftikharahmed.activitylog-viewer.route.enabled')) {
             $this->registerRoutes();
         }
 

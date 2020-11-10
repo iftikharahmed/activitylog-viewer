@@ -1,6 +1,6 @@
-@extends(config('iftikhar.activitylog-viewer.view.layout'))
+@extends(config('iftikharahmed.activitylog-viewer.view.layout'))
 
-@section(config('iftikhar.activitylog-viewer.view.section'))
+@section(config('iftikharahmed.activitylog-viewer.view.section'))
     <h2 class="ui header">Hologram</h2>
 
     {!!

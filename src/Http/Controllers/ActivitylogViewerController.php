@@ -29,7 +29,7 @@ class ActivitylogViewerController extends Controller
 
         $by = Factory::create($request->get('by_id'), $request->get('by_type'));
         $on = Factory::create($request->get('on_id'), $request->get('on_type'));
-        $logs = app('iftikhar.activitylog-viewer')->on($on)->by($by)->getData();
+        $logs = app('iftikharahmed.activitylog-viewer')->on($on)->by($by)->getData();
 
         if(request()->ajax()) {
             return view('activitylog-viewer::items', compact('logs'));
