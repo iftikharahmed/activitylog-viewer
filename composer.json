@@ -16,9 +16,9 @@
     ],
     "require": {
         "php" : ">=5.5.0",
-        "illuminate/support": "~5.2",
+        "illuminate/support": ">=5.8",
         "laravolt/suitable": "^1.0|^2.0",
-        "league/fractal": "^0.18.0"
+        "league/fractal": ">=0.13.0"
     },
     "require-dev": {
         "phpunit/phpunit" : "4.*|5.*"
