@@ -3,7 +3,7 @@
     "description": "Laravel activity log viewer",
     "keywords": [
         "laravel",
-        "activity log",
+        "activity log"
     ],
     "homepage": "https://github.com/iftikharahmed/activitylog-viewer",
     "license": "MIT",
